@@ -2,9 +2,11 @@ import React from 'react';
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
+import "./../styles/index.css";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRightFromBracket } from "@fortawesome/free-solid-svg-icons";
+import { Link } from 'react-router-dom';
 
 
 function Header() {
@@ -13,14 +15,14 @@ function Header() {
             <header id="entete">
                 <nav class="navbar navbar-expand-lg bg-warning h-100">
                     <div class="container-fluid px-5">
-                        <a class="navbar-brand fs-2 fw-semibold px-2" href="#">GESTOPERS</a>
+                        <Link to="/" className='navbar-brand fs-2 fw-semibold px-2'>GESTOPERS</Link>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                             <ul class="navbar-nav">
                                 <li class="nav-item px-2">
-                                    <a class="nav-link fs-5 fw-medium" href="#">Tableau de bord</a>
+                                    <Link to="/dashboard" className='nav-link fs-5 fw-medium'>Tableau de bord</Link>
                                 </li>
                                 <li class="nav-item px-2">
                                     <a class="nav-link fs-5 fw-medium" href="#">Departements</a>
