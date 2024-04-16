@@ -6,7 +6,7 @@
     height: 100px;
 }
 
-.accueil{
+.container{
     /* PROBLEME A RESOURDRE PLUS TARD */
     /* background-image: url('./assets/accueil-bg.jpg');
     background-size: cover; */
@@ -14,4 +14,10 @@
     height: 100% !important;
     position: relative;
     top: -100px;
+    padding-top: 100px !important;
+}
+
+a{
+    text-decoration: none !important;
+    cursor: pointer;
 }
