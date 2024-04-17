@@ -3,7 +3,9 @@
 }
 
 #entete{
+    position: relative;
     height: 100px;
+    z-index: 1000;
 }
 
 .container{

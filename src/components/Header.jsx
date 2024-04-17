@@ -15,14 +15,14 @@ function Header() {
             <header id="entete">
                 <nav class="navbar navbar-expand-lg bg-warning h-100">
                     <div class="container-fluid px-5">
-                        <Link to="/" className='navbar-brand fs-2 fw-semibold px-2'>GESTOPERS</Link>
+                        <a class="navbar-brand fs-2 fw-semibold px-2" href="/">GESTOPERS</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                             <ul class="navbar-nav">
                                 <li class="nav-item px-2">
-                                    <Link to="/dashboard" className='nav-link fs-5 fw-medium'>Tableau de bord</Link>
+                                    <a class="nav-link fs-5 fw-medium" href="/dashboard">Tableau de bord</a>
                                 </li>
                                 <li class="nav-item px-2">
                                     <a class="nav-link fs-5 fw-medium" href="#">Departements</a>
@@ -31,7 +31,7 @@ function Header() {
                                     <a class="nav-link fs-5 fw-medium" href="#">Permissions</a>
                                 </li>
                                 <li class="nav-item px-2">
-                                    <a class="nav-link fs-5 fw-medium" href="#">
+                                    <a class="nav-link fs-5 fw-medium" href="/">
                                         <FontAwesomeIcon icon={faRightFromBracket} />
                                     </a>
                                 </li>
