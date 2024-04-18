@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 
 import Header from '../components/Header'
+import InputField from '../components/InputField'
+import FormSubmitButton from '../components/FormSubmitButton'
 
 import "./../styles/index.css"
 import { useNavigate } from 'react-router-dom'
@@ -39,19 +41,19 @@ function Connexion() {
                         <div className="card w-100">
                             <div className="card-body">
                                 <form onSubmit={handleSubmit}>
-                                    <div className="mb-4">
-                                        <label className="form-label">Nom d'utilisateur</label>
-                                        <input  type="text" className="form-control" 
-                                                value={username} 
-                                                onChange={(e) => setUsername(e.target.value)} />
-                                    </div>
-                                    <div className="mb-4">
-                                        <label className="form-label">Mot de passe</label>
-                                        <input type="password" className="form-control"
-                                                value={password}
-                                                onChange={(e) => setPassword(e.target.value)} />
-                                    </div>
-                                    <button className="btn btn-primary w-100 py-8 mb-4 rounded-2" type='submit'>Lancer l'analyse</button>
+                                    <InputField 
+                                        label="Nom d'utilisateur" 
+                                        type="text" 
+                                        value={username} 
+                                        onChange={(e) => setUsername(e.target.value)} 
+                                    />
+                                    <InputField 
+                                        label="Mot de passe" 
+                                        type="password" 
+                                        value={password} 
+                                        onChange={(e) => setPassword(e.target.value)} 
+                                    />
+                                    <FormSubmitButton>Lancer l'analyse</FormSubmitButton>
                                 </form>
                             </div>
                         </div>
