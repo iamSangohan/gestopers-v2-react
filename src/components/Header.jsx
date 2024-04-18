@@ -25,7 +25,7 @@ function Header() {
                                     <a class="nav-link fs-5 fw-medium" href="/dashboard">Tableau de bord</a>
                                 </li>
                                 <li class="nav-item px-2">
-                                    <a class="nav-link fs-5 fw-medium" href="#">Departements</a>
+                                    <a class="nav-link fs-5 fw-medium" href="/departement">Departements</a>
                                 </li>
                                 <li class="nav-item px-2">
                                     <a class="nav-link fs-5 fw-medium" href="#">Permissions</a>
